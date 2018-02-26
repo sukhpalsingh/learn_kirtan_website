@@ -1,2 +1,8 @@
-# learn_kirtan_website
+# Learn Kirtan Website
 Website for learning kirtan
+
+# Development
+
+## Installation
+
+docker-compose up -d
