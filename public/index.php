@@ -1,5 +1,4 @@
 <?php
-echo 'here';exit;
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
