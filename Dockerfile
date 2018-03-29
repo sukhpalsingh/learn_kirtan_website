@@ -15,7 +15,8 @@ RUN apt-get install -qq php7.0-fpm \
         php7.0-dom \
         git \
         bzip2 \
-        php7.0-zip
+        php7.0-zip \
+        php7.0-mysql
 
 # Composer Install
 RUN curl -sS https://getcomposer.org/installer | php && \
