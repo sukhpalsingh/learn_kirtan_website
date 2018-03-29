@@ -14,12 +14,16 @@ let mix = require('laravel-mix');
 mix.styles([
     'node_modules/mdbootstrap/css/bootstrap.min.css',
     'node_modules/mdbootstrap/css/mdb.min.css',
-    'resources/assets/sass/app.scss'
+    'resources/assets/css/app.css'
 ], 'public/build/css/app.css');
 
 mix.scripts([
     'node_modules/mdbootstrap/js/jquery-3.2.1.min.js',
+    'node_modules/mdbootstrap/js/popper.min.js',
     'node_modules/mdbootstrap/js/bootstrap.min.js',
     'node_modules/mdbootstrap/js/mdb.min.js',
+    'node_modules/fontawesome/index.js',
     'resources/assets/js/app.js'
 ], 'public/build/js/app.js');
+
+mix.copyDirectory('resources/assets/images', 'public/build/images');
