@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Signika', sans-serif;
+    background-color: #eee;
 }
 
 #logo-panel {
@@ -22,4 +23,23 @@ body {
 
 #main-nav {
     display: block;
+}
+
+.card.card-cascade.wider {
+    background-color: #eee;
+}
+
+.card.card-cascade.wider .view {
+    min-height: 100px;
+    padding-left: 65px;
+}
+
+.card.card-cascade.wider .card-body {
+    margin: 4%;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+html {
+    background-color: #eee;
 }
