@@ -27,3 +27,5 @@ mix.scripts([
 ], 'public/build/js/app.js');
 
 mix.copyDirectory('resources/assets/images', 'public/build/images');
+
+mix.copyDirectory('resources/fonts', 'public/build/fonts');
