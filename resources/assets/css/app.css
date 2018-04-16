@@ -3,9 +3,27 @@
     src: url(../fonts/Signika-Regular.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "gurbaniwebthick";
+    src: url(../fonts/gurbaniwebthick.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "WebLipiHeavy";
+    src: url(../fonts/WebLipiHeavy.ttf) format("truetype");
+}
+
 body {
     font-family: 'Signika', sans-serif;
     background-color: #eee;
+}
+
+.gurbani-font-1 {
+    font-family: gurbaniwebthick;
+}
+
+.gurbani-font-2 {
+    font-family: WebLipiHeavy;
 }
 
 #logo-panel {
@@ -38,6 +56,7 @@ body {
     margin: 4%;
     background-color: #fff;
     margin-bottom: 20px;
+    margin-top: -50px;
 }
 
 html {
