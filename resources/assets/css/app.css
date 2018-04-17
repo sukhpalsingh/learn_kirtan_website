@@ -48,7 +48,7 @@ body {
 }
 
 .card.card-cascade.wider .view {
-    min-height: 100px;
+    min-height: 150px;
     padding-left: 65px;
 }
 
@@ -56,9 +56,13 @@ body {
     margin: 4%;
     background-color: #fff;
     margin-bottom: 20px;
-    margin-top: -50px;
+    margin-top: -55px;
 }
 
 html {
     background-color: #eee;
+}
+
+.font-size-20 {
+    font-size: 20px;
 }
