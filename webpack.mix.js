@@ -22,7 +22,6 @@ mix.scripts([
     'node_modules/mdbootstrap/js/popper.min.js',
     'node_modules/mdbootstrap/js/bootstrap.min.js',
     'node_modules/mdbootstrap/js/mdb.min.js',
-    'node_modules/fontawesome/index.js',
     'resources/assets/js/app.js'
 ], 'public/build/js/app.js');
 

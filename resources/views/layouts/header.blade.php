@@ -19,13 +19,19 @@
         </div>
 
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark cyan accent-4">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="mainmenu" class="collapse navbar-collapse" id="navbarSupportedContent-7">
-            <ul class="navbar-nav mr-auto">
+<nav class="navbar navbar-expand-md navbar-inverse navbar-dark cyan accent-4">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div id="mainmenu" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav mr-auto">
                 <li
                     @if ($tab === 'home')
                         class="nav-item active"
