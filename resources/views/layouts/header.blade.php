@@ -10,10 +10,34 @@
     <body>
         <div id="logo-panel" class="container">
             <nav id="main-nav" class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><strong>Learn Kirtan</strong></a>
+                <a class="navbar-brand" href="/"><strong>Learn Kirtan</strong></a>
                 <div class="float-right">
-                    <a href="#"><strong>Sign Up</strong></a>
-                    <button type="button" class="btn btn-primary btn-rounded btn-sm">Login</button>
+                    @guest
+                        <a href="{{ route('register') }}"><strong>Sign Up</strong></a>
+                        <a href="{{ route('login') }}" class="btn btn-primary btn-rounded btn-sm"><strong>Login</strong></a>
+                    @else
+                        <ul>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    @endguest
                 </div>
             </nav>
         </div>
