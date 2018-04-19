@@ -84,8 +84,19 @@
                         @endif
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Raags</a>
+                <li
+                    @if ($tab === 'raags')
+                        class="nav-item active"
+                    @else
+                        class="nav-item"
+                    @endif
+                >
+                    <a class="nav-link" href="/raags">
+                    Raags
+                        @if ($tab === 'raags')
+                            <span class="sr-only">(current)</span>
+                        @endif
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Shabads</a>
