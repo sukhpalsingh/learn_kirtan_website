@@ -13,34 +13,38 @@
 
                 <section class="py-4">
 
-                <!--Grid row-->
-                <div class="row">
+                    @foreach ($raags as $raag)
 
-                    <!--Grid column-->
-                    <div class="col-lg-5 col-xl-4 mb-4">
-                        <!--Featured image-->
-                        <div class="overlay rounded z-depth-1-half">
-                            <img src="build/images/raag_asa.jpg" class="img-fluid" alt="Raag Asa">
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-lg-5 col-xl-4 mb-4">
+                                <!--Featured image-->
+                                <div class="overlay rounded z-depth-1-half">
+                                    <img src="build/images/raag_{{ $raag->identifier }}.jpg" class="img-fluid" alt="{{ $raag->name_eng }}">
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+                                <h3 class="mb-3 font-weight-bold dark-grey-text gurbani-font-2">
+                                    <strong>{{ $raag->name_pun }}</strong>
+                                </h3>
+                                <p class="grey-text gurbani-font-2">
+                                    {{ $raag->description_pun }}
+                                </p>
+                                <a class="btn btn-primary btn-md" href="/raags/{{ $raag->identifier }}/introduction">Read more</a>
+                            </div>
+                            <!--Grid column-->
+
                         </div>
-                    </div>
-                    <!--Grid column-->
+                        <!--Grid row-->
 
-                    <!--Grid column-->
-                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
-                        <h3 class="mb-3 font-weight-bold dark-grey-text">
-                            <strong>Raag Asa</strong>
-                        </h3>
-                        <p class="grey-text">
-                            Raag Asa
-                        </p>
-                        <a class="btn btn-primary btn-md">Read more</a>
-                    </div>
-                    <!--Grid column-->
+                        <hr class="mb-5">
 
-                </div>
-                <!--Grid row-->
-
-                <hr class="mb-5">
+                    @endforeach
 
                 </section>
                         

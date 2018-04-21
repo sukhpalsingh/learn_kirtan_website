@@ -26,4 +26,8 @@ Route::get('/verify/resend', 'Auth\VerificationController@resend')->name('auth.v
 
 Route::resource('raags', 'RaagController');
 
+Route::get('/raags/{name}/introduction', 'RaagController@showIntroduction');
+Route::get('/raags/{name}/sargams', 'RaagController@showSargams');
+Route::get('/raags/{name}/shabads', 'RaagController@showShabads');
+
 // Route::get('/home', 'HomeController@index')->name('home');

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Raag;
 
 class RaagController extends Controller
 {
@@ -18,6 +19,12 @@ class RaagController extends Controller
 
     public function index()
     {
-        return view('raag.list');
+        $raags = Raag::all();
+        return view('raag.list', ['raags' => $raags]);
+    }
+
+    public function showIntroduction($name)
+    {
+        return view('raag.introduction', ['name' => $name]);
     }
 }

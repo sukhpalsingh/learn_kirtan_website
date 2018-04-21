@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Learn Gurbani Kirtan</title>
-        <link rel="stylesheet" type="text/css" href="build/css/app.css">
+        <link rel="stylesheet" type="text/css" href="/build/css/app.css">
     </head>
     <body>
         <div id="logo-panel" class="container">
