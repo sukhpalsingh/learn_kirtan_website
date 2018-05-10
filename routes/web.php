@@ -30,4 +30,8 @@ Route::get('/raags/{name}/introduction', 'RaagController@showIntroduction');
 Route::get('/raags/{name}/sargams', 'RaagController@showSargams');
 Route::get('/raags/{name}/shabads', 'RaagController@showShabads');
 
+Route::post('/shabads/search', 'ShabadController@search');
+
+Route::resource('shabads', 'ShabadController');
+
 // Route::get('/home', 'HomeController@index')->name('home');
